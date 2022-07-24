@@ -16,7 +16,7 @@ export default class SortingVisualizer extends React.Component {
 
     resetArray() {
         const array = [];
-        for (let i = 0; i < 400; i++) {
+        for (let i = 0; i < 500; i++) {
             array.push(randomIntFromInterval(10, 800))
         }
         this.setState({array})
@@ -36,7 +36,7 @@ export default class SortingVisualizer extends React.Component {
                         </div>
                     ))}
                 </div>
-                <button onClick={() => this.resetArray()}>Randomize Array</button>
+                <button className="random-button" onClick={() => this.resetArray()}>Randomize Array</button>
             </div>
         );
     }
