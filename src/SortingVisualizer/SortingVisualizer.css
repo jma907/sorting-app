@@ -1,11 +1,18 @@
  .array-container {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.array-holder {
+    display: flex;
     flex-direction: row;
     align-items: flex-end;
- }
+}
 
  .array-bar {
     width: 2px;
     background-color:coral;
+    
  }
