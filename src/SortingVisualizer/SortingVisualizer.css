@@ -15,10 +15,3 @@
     width: 2px;
     background-color:coral;
  }
-
- /* trying to center button */
- .random-button {
-    display: flex;
-    width: min-content;
-    justify-content: center;
- }

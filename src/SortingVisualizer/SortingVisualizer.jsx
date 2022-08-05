@@ -36,7 +36,13 @@ export default class SortingVisualizer extends React.Component {
                         </div>
                     ))}
                 </div>
-                <button className="random-button" onClick={() => this.resetArray()}>Randomize Array</button>
+                <div className="button-holder">
+                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                </div>
             </div>
         );
     }
