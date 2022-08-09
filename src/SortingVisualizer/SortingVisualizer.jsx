@@ -22,6 +22,14 @@ export default class SortingVisualizer extends React.Component {
         this.setState({array})
     }
 
+    bubbleSort() {}
+
+    exchangeSort() {}
+
+    mergeSort() {}
+
+    countingSort() {}
+
     render() {
         const {array} = this.state;
 
@@ -38,10 +46,10 @@ export default class SortingVisualizer extends React.Component {
                 </div>
                 <div className="button-holder">
                     <button onClick={() => this.resetArray()}>Randomize Array</button>
-                    <button onClick={() => this.resetArray()}>Randomize Array</button>
-                    <button onClick={() => this.resetArray()}>Randomize Array</button>
-                    <button onClick={() => this.resetArray()}>Randomize Array</button>
-                    <button onClick={() => this.resetArray()}>Randomize Array</button>
+                    <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+                    <button onClick={() => this.exchangeSort()}>Exchange Sort</button>
+                    <button onClick={() => this.mergeSort()}>Merge Sort</button>
+                    <button onClick={() => this.countingSort()}>Counting Sort</button>
                 </div>
             </div>
         );
